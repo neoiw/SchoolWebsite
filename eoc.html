@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Brain of Cthulhu</title>
+        <title>Eye of Cthulhu</title>
         <meta charset="utf-8">
-        <link rel="icon" href="./assets/favicons/boc.png">
+        <link rel="icon" href="./assets/favicons/eoc.png">
         <style>
             body{
-                background-image: url("./assets/bg/crimson.png");
+                background-image: url("./assets/bg/corruption.png");
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: cover;
@@ -41,7 +41,7 @@
             }
             
             td[headers=row]{
-                background-color: brown;
+                background-color: darkblue;
                 color: beige;
                 border-color: black;
             }
@@ -86,16 +86,16 @@
         <section>
             <div class="bg-image"></div>
             <div class="title">
-                <h1>크툴루의 뇌</h1>
-                <h3>Brain of Cthulhu</h3>
+                <h1>크툴루의 눈</h1>
+                <h3>Eye of Cthulhu</h3>
                 <p>
-                    크툴루의 뇌는 진홍지대의 보스로, 하드모드 전에 싸우게 될 보스이다.
+                    크툴루의 눈은 밤에 소환가능한 보스로, 보통 첫번째로 싸우게될 보스이다.
                 </p>
                 <table>
                     <caption>스탯</caption>
                     <tr >
-                        <td colspan="2" id="c1"><img src="./assets/img/boc1.png" alt="error!"><br>페이즈 1</td>
-                        <td colspan="2" id="c2"><img src="./assets/img/boc2.png" alt="error!"><br>페이즈 2</td>
+                        <td colspan="2" id="c1"><img src="./assets/img/eoc1.png" alt="error!"><br>페이즈 1</td>
+                        <td colspan="2" id="c2"><img src="./assets/img/eoc2.png" alt="error!"><br>페이즈 2</td>
                     </tr>
                     <tr>
                         <th scope="col" id="row"></th>
@@ -105,31 +105,31 @@
                     </tr>
                     <tr>
                         <td headers="row">체력</td>
-                        <td headers="classic">1000</td>
-                        <td headers="expert">1700</td>
-                        <td headers="master">2167</td>
+                        <td headers="classic">2800</td>
+                        <td headers="expert">3640</td>
+                        <td headers="master">4641</td>
                     </tr>
                     <tr>
                         <td headers="row">방어력</td>
-                        <td headers="classic">14</td>
-                        <td headers="expert">14</td>
-                        <td headers="master">14</td>
+                        <td headers="classic">12</td>
+                        <td headers="expert">12</td>
+                        <td headers="master">12</td>
                     </tr>
                     <tr>
                         <td headers="row">공격력</td>
-                        <td headers="classic">30</td>
-                        <td headers="expert">54</td>
-                        <td headers="master">81</td>
+                        <td headers="classic">15</td>
+                        <td headers="expert">30</td>
+                        <td headers="master">45</td>
                     </tr>
                 </table>
                 <p>
-                    진홍지대의 진홍색 심장 3개를 망치로 부수거나 피투성이 등뼈를 진홍지대에서 사용하여 소환이 가능하다.
+                    플레이어의 체력이 200 이상, NPC 가 3명 이상, 방어력이 10 이상, 아직 크툴루의 눈을 격파한 적이 없다면 매 밤마다 1/3 확률로 나타나는 보스이다. 밤에 플레이어가 수상해 보이는 눈 아이템을 사용해 직접 소환하는 것도 가능하다.
                 </p>
                 <p>
-                    처음에 소환되면 20마리의 크리퍼라는 몸과 함께 소환되며, 일정 간격으로 계속 텔레포트한다. 이때 크툴루의 뇌는 무적상태이며, 오직 크리퍼에게만 데미지를 입힐 수 있다. 20마리의 크리퍼를 모두 처치하면 페이즈2 로 넘어가게 되며, 이때부터 뇌에게 직접적인 피해를 입히는 것이 가능해진다. 1페이즈와는 비교가 안될 빠른 속도로 플레이어 근처로 텔레포트를 하며 근접피해를 입힌다. 이때 입히는 데미지가 초심자에게는 많이 버거울 30이므로 주의해야 한다.
+                    소환되면 플레이어에게 3번 돌진 뒤 "크툴루의 하인" 이라는 잡몹을 여럿 소환한다. 이 패턴을 반복하다가 체력이 50% 이해로 내려갈 시 페이즈2 로 넘어가게 되며 눈알이 사라지고 입이 튀어나오게 된다. 잡몹 소환 패턴을 사라지지만 돌진 패턴이 강화되므로 주의해야한다. 돌진을 잘 피하면서 뎀을 계속 주도록 하자.
                 </p>
                 <p>
-                    크툴루의 뇌를 처치하면 전리품인 조직 샘플과 크림테인 광석을 드랍한다.
+                    크툴루의 눈을 처치하면 플레이어의 월드에 따라 데모나이트 주괴, 또는 크림테인 주괴를 드랍한다.
                 </p>
             </div>
         </section>
