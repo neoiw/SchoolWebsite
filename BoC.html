@@ -5,38 +5,133 @@
         <meta charset="utf-8">
         <link rel="icon" href="./assets/favicons/boc.png">
         <style>
-            html,body{
-                height: 100%;
-                width: 100%;
+            body{
+                background-image: url("./assets/bg/crimson.png");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                
             }
-            .bg-img{
-                background-size: 100% 100%;
-                background-image: url("https://static.wikia.nocookie.net/terraria_gamepedia/images/3/34/Crimson_background_1.png/revision/latest/scale-to-width-down/1024?cb=20200816172836");
-            }
-            table{
+            section{
+                width:90%;
+                height:100%;             
+                border: solid 2px gray;
+                background-color: rgba(169, 169, 169, 0.8);
+                border-radius: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-left: 5%;
+                margin-right: auto;
+            }          
+            table,th,td{
                 border-style: solid;
-                border-width: 3px;
+                border-width: 2px;
+                border-collapse: collapse;
+                border-spacing: 15px;
+                padding: 10px;
+                margin-right: 20%;
+                margin-left: auto;
+                background-color: #555555;
+                color: #aaaaaa;
+                border-color: #000000;
+            }
+            
+            td{
+                text-align: center;
+                color: #fff;
+            }
+            
+            td[headers=row]{
+                background-color: brown;
+                color: beige;
+                border-color: black;
+            }
+          
+            #classic{
+                text-shadow: 0 0 10px #ffffff
+            }
+          
+            #expert{
+                text-shadow: 0 0 10px #800080;
+                border-color: black;
+            }
+         
+            #master{
+                text-shadow: 0 0 10px #ff0000;                
+                border-color: #000000;
+            }
+          
+            th{
+                background-color: gray;
+                color: #ffffff;
+                border-color: #000000;
+            }            
+
+            caption{
+                border: solid 2px;
+                border-collapse: collapse ;
+                background-color: #555555;
+                border-color: #000;
+            }
+            
+            #c1{
+                border-right: 0px;
             }
 
+            #c2{
+                border-left: 0px;
+            }
         </style>
     </head>
     <body>
-        <div class="bg-image"></div>
-        <div class="title">
-            <h1>크툴루의 뇌</h1>
-            <h3>Brain of chutulu</h3>
-            <p>
-                크툴루의 뇌는 진홍지대의 보스로, 하드모드 전에 싸우게 될 보스이다.
-            </p>
-            <table>
-                <caption>스탯</caption>
-                <tr>
-                    <th scope="col">체력</th>
-                    <th scope="col">방어력</th>
-                    <th scope="col">공격력</th>
-                </tr>
-            </table>
-        </div>
-
+        <section>
+            <div class="bg-image"></div>
+            <div class="title">
+                <h1>크툴루의 뇌</h1>
+                <h3>Brain of chutulu</h3>
+                <p>
+                    크툴루의 뇌는 진홍지대의 보스로, 하드모드 전에 싸우게 될 보스이다.
+                </p>
+                <table>
+                    <caption>스탯</caption>
+                    <tr >
+                        <td colspan="2" id="c1"><img src="./assets/img/boc1.png" alt="error!"><br>페이즈 1</td>
+                        <td colspan="2" id="c2"><img src="./assets/img/boc2.png" alt="error!"><br>페이즈 2</td>
+                    </tr>
+                    <tr>
+                        <th scope="col" id="row"></th>
+                        <th scope="col" id="classic">클래식</th>
+                        <th scope="col" id="expert">전문가</th>
+                        <th scope="col" id="master">마스터</th>
+                    </tr>
+                    <tr>
+                        <td headers="row">체력</td>
+                        <td headers="classic">1000</td>
+                        <td headers="expert">1700</td>
+                        <td headers="master">2167</td>
+                    </tr>
+                    <tr>
+                        <td headers="row">방어력</td>
+                        <td headers="classic">14</td>
+                        <td headers="expert">14</td>
+                        <td headers="master">14</td>
+                    </tr>
+                    <tr>
+                        <td headers="row">공격력</td>
+                        <td headers="classic">30</td>
+                        <td headers="expert">54</td>
+                        <td headers="master">81</td>
+                    </tr>
+                </table>
+                <p>
+                    진홍지대의 진홍색 심장 3개를 망치로 부수거나 피투성이 등뼈를 진홍지대에서 사용하여 소환이 가능하다.
+                </p>
+                <p>
+                    처음에 소환되면 20마리의 크리퍼라는 몸과 함께 소환되며, 일정 간격으로 계속 텔레포트한다. 이때 크툴루의 뇌는 무적상태이며, 오직 크리퍼에게만 데미지를 입힐 수 있다. 20마리의 크리퍼를 모두 처치하면 페이즈2 로 넘어가게 되며, 이때부터 뇌에게 직접적인 피해를 입히는 것이 가능해진다. 1페이즈와는 비교가 안될 빠른 속도로 플레이어 근처로 텔레포트를 하며 근접피해를 입힌다. 이때 입히는 데미지가 초심자에게는 많이 버거울 30이므로 주의해야 한다.
+                </p>
+                <p>
+                    크툴루의 뇌를 처치하면 전리품인 조직 샘플과 크림테인 광석을 드랍한다.
+                </p>
+            </div>
+        </section>
     </body>
 </html>
