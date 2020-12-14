@@ -1,37 +1,92 @@
 <!DOCTYPE html>
 <html lang="ko">
     <head>
-        <title>asdf</title>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <title>Main</title>
+        <link rel="icon" href="./assets/favicons/index.png">
         <style>
             ul,li{list-style-type: none;}
             body{
-                background-color: #313131;
-                color: #eeeeee;   
+                background-image: url("./assets/bg/index.png");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
             }
 
-            .menu{
-                padding: 0;
+            section{
+                width:90%;
+                height:100%;             
+                border: solid 2px gray;
+                background-color: rgba(169, 169, 169, 0.8);
+                border-radius: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-left: 5%;
+                margin-right: auto;
             }
 
-            .menu a {width:135px; padding:0 5px 0 5px; display:block; text-decoration:none; }
-            .menu li { position:relative; float:left; margin-right:11px; }
-            .menu li a { height:50px;text-align:center; line-height:50px; font-size:1.05em;  color:#eeeeee; }
+            figure {
+            display: inline-block;
+            border: 1px dotted gray;
+            margin: 20px; 
+}
+            figure img {
+                vertical-align: top;
+                padding: 10px;
+            }
+
+            figure figcaption {
+                border: 1px dotted blue;
+                text-align: center;
+                font-weight: bold;
+            }
+
         </style>
     </head>
     <body>
-        <header class="menu">
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/Joon.html">memez haha lol</a></li>
-                <li><a href="/about.html">About</a></li>
-            </ul>
-        </header>
-        <br>
+
         <section>
-            <div>
                 <h1>테라리아 보스 위키</h1>
                 <h3>Terraria Boss Wiki</h3>
-            </div>
+                <p>
+                    이 사이트는 하드모드 이전의 보스들에 대해 간단히 정리해둔 곳입니다
+                </p>
+                <p>아래 이미지들을 클릭하여 각 보스를 설명하는 페이지로 이동이 가능합니다</p>
+                <figure>
+                    <a href="./eoc.html">
+                        <img src="./assets/img/eoc1.png" alt="error!" title="크툴루의 눈">
+                    </a>
+                    <figcaption>크툴루의 눈</figcaption>
+                </figure>
+                <figure>
+                    <a href="./boc.html">
+                        <img src="./assets/img/boc1.png" alt="error!" title="크툴루의 뇌">
+                    </a>
+                    <figcaption>크툴루의 뇌</figcaption>
+                </figure>
+                <figure>
+                    <a href="./eow.html">
+                        <img src="./assets/img/eow.png" alt="error!" title="세상을 먹는 자">
+                    </a>
+                    <figcaption>세상을 먹는 자</figcaption>
+                </figure>
+                <figure>
+                    <a href="./qb.html">
+                        <img src="./assets/img/qb.gif" alt="error!" title="여왕벌">
+                    </a>
+                    <figcaption>여왕벌</figcaption>
+                </figure>
+                <figure>
+                    <a href="./skeletron.html">
+                        <img src="./assets/img/skelehead.png" alt="error!" title="스켈레트론">
+                    </a>
+                    <figcaption>스켈레트론</figcaption>
+                </figure>
+                <figure id="wof">
+                    <a href="./wof.html">
+                        <img src="./assets/img/wof.png" alt="error!" title="월 오브 플래시" height="20%">
+                    </a>
+                    <figcaption>월 오브 플래시</figcaption>
+                </figure>
         </section>
     </body>
 </html>

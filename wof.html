@@ -2,12 +2,12 @@
 <html lang="en">
     <head>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <title>Eye of Cthulhu</title>
+        <title>Wall of Flesh</title>
         <meta charset="utf-8">
-        <link rel="icon" href="./assets/favicons/eoc.png">
+        <link rel="icon" href="./assets/favicons/wof.png">
         <style>
             body{
-                background-image: url("./assets/bg/night.png");
+                background-image: url("./assets/bg/hell.jpg");
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: cover;
@@ -42,7 +42,7 @@
             }
             
             td[headers=row]{
-                background-color: darkblue;
+                background-color:darkred;
                 color: beige;
                 border-color: black;
             }
@@ -85,16 +85,18 @@
     </head>
     <body>
         <section>
-                <h1>크툴루의 눈</h1>
-                <h3>Eye of Cthulhu</h3>
+                <h1>월 오브 플래시</h1>
+                <h3>Wall of Flesh</h3>
                 <p>
-                    크툴루의 눈은 밤에 소환가능한 보스로, 보통 첫번째로 싸우게될 보스이다.
+                    지옥의 보스로, 하드모드로 진입을 하기위해 격파해야하는 보스이다.
+                </p>
+                <p>
+                    특이사항으로 모든 보스중 크기가 제일 크다. Y축 전체를 잡아먹는다. 
                 </p>
                 <table>
                     <caption>스탯</caption>
                     <tr >
-                        <td colspan="2" id="c1"><img src="./assets/img/eoc1.png" alt="error!"><br>페이즈 1</td>
-                        <td colspan="2" id="c2"><img src="./assets/img/eoc2.png" alt="error!"><br>페이즈 2</td>
+                        <td colspan="4" id="c1"><img src="./assets/img/wof.png" alt="error!"><br>월 오브 플래시</td>
                     </tr>
                     <tr>
                         <th scope="col" id="row"></th>
@@ -104,42 +106,33 @@
                     </tr>
                     <tr>
                         <td headers="row">체력</td>
-                        <td headers="classic">2800</td>
-                        <td headers="expert">3640</td>
-                        <td headers="master">4641</td>
+                        <td headers="classic">8000</td>
+                        <td headers="expert">11200</td>
+                        <td headers="master">14280</td>
                     </tr>
                     <tr>
-                        <td headers="row">페이즈1 방어력</td>
-                        <td colspan="3">12</td>
+                        <td headers="row">방어력</td>
+                        <td>12</td>
+                        <td colspan="2">18</td>
                     </tr>
                     <tr>
-                        <td headers="row">페이즈1 공격력</td>
-                        <td headers="classic">15</td>
-                        <td headers="expert">30</td>
-                        <td headers="master">45</td>
-                    </tr>
-                    <tr>
-                        <td headers="row">페이즈2 방어력</td>
-                        <td colspan="3">0</td>
-                    </tr>
-                    <tr>
-                        <td headers="row">페이즈2 공격력</td>
-                        <td headers="classic">23</td>
-                        <td headers="expert">36,40 *</td>
-                        <td headers="master">54,60 **</td>
-                    </tr>
-                    <tr>
-                        <td colspan="4">* 체력이 145 이하로 내려갈시 <br>** 체력이 185 이하로 내려갈시</td>
+                        <td headers="row">공격력</td>
+                        <td headers="classic">50</td>
+                        <td headers="expert">105</td>
+                        <td headers="master">225</td>
                     </tr>
                 </table>
                 <p>
-                    플레이어의 체력이 200 이상, NPC 가 3명 이상, 방어력이 10 이상, 아직 크툴루의 눈을 격파한 적이 없다면 매 밤마다 1/3 확률로 나타나는 보스이다. 밤에 플레이어가 수상해 보이는 눈 아이템을 사용해 직접 소환하는 것도 가능하다.
+                    지옥에서 가이드 부두인형 또는 가이드를 용암속에 빠트려 소환이 가능하다
                 </p>
                 <p>
-                    소환되면 플레이어에게 3번 돌진 뒤 "크툴루의 하인" 이라는 잡몹을 여럿 소환한다. 이 패턴을 반복하다가 체력이 50% 이해로 내려갈 시 페이즈2 로 넘어가게 되며 눈알이 사라지고 입이 튀어나오게 된다. 잡몹 소환 패턴을 사라지지만 돌진 패턴이 강화되므로 주의해야한다. 돌진을 잘 피하면서 뎀을 계속 주도록 하자.
+                    보스전 방식이 다른 보스들과 차별화가 되는데, 한쪽방향으로 계속 직진해온다. 즉 플레이어는 계속 한쪽으로 이동하면서 싸워야 하는것.
                 </p>
                 <p>
-                    크툴루의 눈을 처치하면 플레이어의 월드에 따라 데모나이트 주괴, 또는 크림테인 주괴를 드랍한다.
+                    입에서는 헝그리라는 이름의 잡몹의 소환되며, 눈에서는 레이저를 발사한다. 헝그리를 잡으면 하트르를 줌으로 체력이 부족하다면 열심히 잡도록 하자. 눈이 입보다 방어력이 적으므로 눈을 위주로 공격하는 것이 효과적.
+                </p>
+                <p>
+                    월 오브 플래시를 격파하면 월드가 하드모드로 돌입하게 된다.
                 </p>
         </section>
     </body>

@@ -2,12 +2,12 @@
 <html lang="en">
     <head>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <title>Eye of Cthulhu</title>
+        <title>Queen Bee</title>
         <meta charset="utf-8">
-        <link rel="icon" href="./assets/favicons/eoc.png">
+        <link rel="icon" href="./assets/favicons/qb.png">
         <style>
             body{
-                background-image: url("./assets/bg/night.png");
+                background-image: url("./assets/bg/beehive.png");
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: cover;
@@ -42,8 +42,8 @@
             }
             
             td[headers=row]{
-                background-color: darkblue;
-                color: beige;
+                background-color: #ebaf4c;
+                color:#000;
                 border-color: black;
             }
           
@@ -85,16 +85,15 @@
     </head>
     <body>
         <section>
-                <h1>크툴루의 눈</h1>
-                <h3>Eye of Cthulhu</h3>
+                <h1>여왕벌</h1>
+                <h3>Queen Bee</h3>
                 <p>
-                    크툴루의 눈은 밤에 소환가능한 보스로, 보통 첫번째로 싸우게될 보스이다.
-                </p>
+                    정글지하에 있는 벌집의 보스로, 일반적으로 3번째로 격파할 보스이다.
+                </p>                
                 <table>
                     <caption>스탯</caption>
                     <tr >
-                        <td colspan="2" id="c1"><img src="./assets/img/eoc1.png" alt="error!"><br>페이즈 1</td>
-                        <td colspan="2" id="c2"><img src="./assets/img/eoc2.png" alt="error!"><br>페이즈 2</td>
+                        <td colspan="4" id="c1"><img src="./assets/img/qb.gif" alt="error!"><br>여왕벌</td>
                     </tr>
                     <tr>
                         <th scope="col" id="row"></th>
@@ -104,43 +103,40 @@
                     </tr>
                     <tr>
                         <td headers="row">체력</td>
-                        <td headers="classic">2800</td>
-                        <td headers="expert">3640</td>
-                        <td headers="master">4641</td>
+                        <td headers="classic">3400</td>
+                        <td headers="expert">4760</td>
+                        <td headers="master">6069</td>
                     </tr>
                     <tr>
-                        <td headers="row">페이즈1 방어력</td>
-                        <td colspan="3">12</td>
+                        <td headers="row">방어력</td>
+                        <td>8</td>
+                        <td colspan="2">8-28 *</td>
                     </tr>
                     <tr>
-                        <td headers="row">페이즈1 공격력</td>
-                        <td headers="classic">15</td>
-                        <td headers="expert">30</td>
-                        <td headers="master">45</td>
+                        <td headers="row">접촉공격력</td>
+                        <td headers="classic">30</td>
+                        <td headers="expert">54</td>
+                        <td headers="master">81</td>
                     </tr>
                     <tr>
-                        <td headers="row">페이즈2 방어력</td>
-                        <td colspan="3">0</td>
+                        <td headers="row">독침공격력</td>
+                        <td headers="classic">22</td>
+                        <td headers="expert">44</td>
+                        <td headers="master">66</td>
                     </tr>
                     <tr>
-                        <td headers="row">페이즈2 공격력</td>
-                        <td headers="classic">23</td>
-                        <td headers="expert">36,40 *</td>
-                        <td headers="master">54,60 **</td>
-                    </tr>
-                    <tr>
-                        <td colspan="4">* 체력이 145 이하로 내려갈시 <br>** 체력이 185 이하로 내려갈시</td>
+                        <td colspan="4">* 체력에 반비례</td>
                     </tr>
                 </table>
                 <p>
-                    플레이어의 체력이 200 이상, NPC 가 3명 이상, 방어력이 10 이상, 아직 크툴루의 눈을 격파한 적이 없다면 매 밤마다 1/3 확률로 나타나는 보스이다. 밤에 플레이어가 수상해 보이는 눈 아이템을 사용해 직접 소환하는 것도 가능하다.
+                    벌집의 유충을 부수거나 어비미네이션을 사용해 정글에서 소환이 가능하다. 정글 지하가 아닌 지상에서 싸우면 폭주하게 되며, 이동속도 및 공격속도가 빨라진다.
                 </p>
                 <p>
-                    소환되면 플레이어에게 3번 돌진 뒤 "크툴루의 하인" 이라는 잡몹을 여럿 소환한다. 이 패턴을 반복하다가 체력이 50% 이해로 내려갈 시 페이즈2 로 넘어가게 되며 눈알이 사라지고 입이 튀어나오게 된다. 잡몹 소환 패턴을 사라지지만 돌진 패턴이 강화되므로 주의해야한다. 돌진을 잘 피하면서 뎀을 계속 주도록 하자.
+                    플레이어와 수평선상으로 이동하여 돌진공격을 3회 한다. 그 후 독침탄막을 날리며, 피격당하면 10초동안 독 디버프에 걸리게 된다.  그 후 벌 잡몹들을 소환 후 패턴을 반복한다.
                 </p>
                 <p>
-                    크툴루의 눈을 처치하면 플레이어의 월드에 따라 데모나이트 주괴, 또는 크림테인 주괴를 드랍한다.
+                    여왕벌을 격파하면 양봉가, 꿀벌 총, 더 비즈 니즈 등을 드랍하는데 월 오프 플래시 전에서 상당히 유용하다.
                 </p>
-        </section>
+            </section>
     </body>
 </html>
